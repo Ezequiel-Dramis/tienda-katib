@@ -18,13 +18,25 @@ a {
     color: black; 
 }
 
-
-/*estilos contenido principal*/
-h1 {
-    font-family: 'Poppins', sans-serif;
+body{
+    font-family: 'Poppins';
 }
+
+.logo{
+    width: 250px;
+    height: 90px;
+}
+
+.menu:hover{
+    background-color: #c5a74e;
+    text-decoration: underline;
+    
+    
+}
+/*estilos contenido principal*/
+
 main {
-    background-color: #EFF1F3;   
+    background-color: #ffffff;   
 }
 
 ul {
@@ -33,7 +45,6 @@ ul {
 
 
 h2 {
-    font-family: 'Poppins', sans-serif;
     margin:  3px 0;
     
 }
@@ -43,9 +54,6 @@ ul li {
     margin: 10px;
 }
 
-.fuente {
-    font-family: 'Poppins', sans-serif;
-}
 
 .centrado {
     font-family: 'Poppins', sans-serif;
@@ -56,9 +64,11 @@ ul li {
 .tittle { 
     text-align: center;
     text-decoration: underline;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    padding-top: 10px;
 }
-    
+
+/* estilos index */
 .news {
     display: flex;
     flex-direction: column;
@@ -72,19 +82,18 @@ ul li {
     display: flex;
     flex-wrap: wrap;
    
-    
-    
 }
 
 .img {
     width: 100%;
     height: 220px;
+    object-fit: contain;
 }
 
 .card {
     width: 350px;
     border: 3px solid #000;
-    border-radius: 0 0 3% 3%;
+    border-radius: 3% 3% 3% 3%;
     margin: 20px 20px;
 
 }
@@ -96,96 +105,191 @@ ul li {
 
 }
 
-.grid-container{
-    margin: 15px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    grid-column-gap: 6px;
-    grid-row-gap: 6px;
-    grid-template-areas: 
-    "foto-1 foto-2 foto-3"
-    "foto-1 foto-4 foto-5"
-    "foto-6 foto-7 foto-8"
-    "foto-6 foto-7 foto-8"
-    "foto-9 foto-10 foto-11"
-    "foto-14 foto-12 foto-13"
-    
-    ;
-    
+/* estilos productos */
+
+.product-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.grid-container div img{
+
+.product-car{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-1{
     width: 100%;
-    height: 100%;
-    object-fit: fill;
+    height: 220px;
+    object-fit: contain;
 }
 
-.grid-item1 {
-    grid-area: foto-1;
+.car {
+    width: 350px;
+    border: 3px solid #000;
+    border-radius: 3% 3% 3% 3%; 
+    margin: 20px 40px;
+
 }
 
-.grid-item2 {
-    grid-area: foto-2;
+.car h3{
+    text-align: center;
+    margin: 6px 4px;
 }
 
-.grid-item3 {
-    grid-area: foto-3;
+.product-2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.grid-item4 {
-    grid-area: foto-4;
+.product-tri{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.grid-item5 {
-    grid-area: foto-5;
+.img-2{
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
 }
 
-.grid-item6 {
-    grid-area: foto-6;
+.tri {
+    width: 350px;
+    border: 3px solid #000;
+    border-radius: 3% 3% 3% 3%; 
+    margin: 20px 40px;
+
 }
 
-.grid-item7 {
-    grid-area: foto-7;
+.tri h3{
+    text-align: center;
+    margin: 6px 4px;
 }
 
-.grid-item8 {
-    grid-area: foto-8;
+.product-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.grid-item9 {
-    grid-area: foto-9;
+.product-jardin{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.grid-item10 {
-    grid-area: foto-10;
+.img-3{
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
 }
 
-.grid-item11 {
-    grid-area: foto-11;
+.jardin {
+    width: 350px;
+    border: 3px solid #000;
+    border-radius: 3% 3% 3% 3%; 
+    margin: 20px 40px;
+
 }
 
-.grid-item12 {
-    grid-area: foto-12;
+.jardin h3{
+    text-align: center;
+    margin: 6px 4px;
 }
 
-.grid-item13 {
-    grid-area: foto-13;
+.sub-1{
+    margin-left: 20px;
 }
 
-.grid-item14 {
-    grid-area: foto-14;
+/* estilos quienes-somos */
+
+.questions{
+    text-align: center;
+    border: 3px solid #000;
+    border-radius: 3% 3% 3% 3%;
+    margin: 20px 35px 20px 35px;
+    padding: 20px;
 }
 
+.subtittle{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
 
+/* preguntas-frecuentes */
 
+.frecuente{
+    text-align: center;
+    border: 3px solid #000;
+    border-radius: 3% 3% 3% 3%;
+    margin: 20px 35px 20px 35px;
+    padding: 30px;
 
+}
+
+.texto-frecuente{
+    margin-top: 10px;
+    padding: 2px;
+    
+}
+
+/* estilos-contacto */
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 5px;
+}
+
+.contacto-1{
+    display: flex;
+    margin: 10px;
+
+}
+
+.img-4{
+    width: 25px;
+    height: 25px;
+}
+
+/* estilos-ubicacion */
+
+.map{
+    width: 800px;
+    height: 600px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+
+}
 
 /*estilo footer*/
 footer {
-    background-color:#FED766 ;
     display: flex;
-    justify-content: baseline;
+    justify-content:space-between;
+    background-color:#FED766 ;
     padding: 20px;
-    
+ 
 }
+
+.text{
+    text-align: left;
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    width: 35px;
+    height: 35px;
+}
+    
+.redes{
+    margin: 0 3px;
+}    
 
